@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/border_linear_layout"
+    android:orientation="vertical" >
+<TableLayout 
+     android:id="@+id/tableLayout1"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:focusableInTouchMode="true"
+     >
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:paddingTop="10sp" 
+        >
+        <EditText
+            android:id="@+id/edtFileName"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:hint="Enter file name --> press Enter"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_login"
+            android:layout_weight="1"
+            >
+			
+        </EditText>
+        
+    </TableRow>
+    <TableRow 
+        android:id="@+id/tableRow2"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"    
+        >
+
+        <Button
+        	android:id="@+id/btEnter"
+        	android:layout_width="0dp"
+        	android:background="@drawable/border_text_view"
+        	android:textColor="#FFFFFF"
+        	android:textStyle="bold"
+        	android:layout_marginLeft="10dp"
+        	android:text="Enter" 
+        	android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btExportCSV"
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_text_view"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Export"
+            android:textColor="#FFFFFF" />
+            
+        <Button
+        	android:id="@+id/btSync"
+        	android:layout_width="0dp"
+        	android:background="@drawable/border_text_view"
+        	android:textColor="#FFFFFF"
+        	android:textStyle="bold"
+        	android:layout_marginLeft="5dp"
+        	android:layout_marginRight="10dp"
+        	android:layout_weight="1"
+        	android:gravity="center"
+        	android:text="Send" />
+            
+         
+            
+     </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10dip"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_text_view"
+            android:clickable="true"
+            android:text="SCAN"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="#F4FA58"
+            android:textStyle="bold" />
+    </TableRow>
+
+      <TableRow 
+         android:layout_marginTop="10dip" >
+                         
+         <TextView
+            android:id="@+id/tvFileName"
+            android:layout_height="wrap_content"
+            android:text="File: sdcard/ScannedCode/TestScanner.csv"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:background="@drawable/border_text_view"
+            android:textColor="#F4FA58"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+    	 	android:layout_marginRight="10dp"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:layout_weight="1">
+           
+         </TextView>
+      </TableRow>
+     </TableLayout>
+
+<ListView
+    android:id="@+id/lvHistory"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dip"
+    android:layout_marginBottom="10dip"
+    android:layout_weight="1"
+    android:background="@drawable/border_linear_layout" >
+</ListView>
+
+</LinearLayout>

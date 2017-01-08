@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    android:shape="rectangle"
+    
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+    <!-- Mau nen -->
+    
+    <solid 
+        android:color="#8181F7"
+        />
+    <!-- Do rong cua vien va mau vien -->
+    
+    <stroke 
+        android:width="2dp"
+        android:color="#8181F7"
+        />
+    <!-- Căn chỉnh -->
+    <padding
+        android:left="15dp"
+        android:right="15dp"
+        android:bottom="5dp"
+        android:top="5dp"
+         />
+    <!-- Corner -->
+    
+    <corners 
+        android:radius="10dp"
+        />
+</shape>
+
